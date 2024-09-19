@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio with Ad</title>
+    <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+    <style>
+      #adContainer {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Audio with Pre-roll Ad</h1>
+    <audio id="contentPlayer" controls>
+      <source
+        src="https://cloudimages.broadwayworld.com/audio/2024/07/2322543.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <div id="adContainer"></div>
+
+    <script src="/audio-ad.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio with Ad</title>
+    <!-- Load the Google IMA SDK -->
+    <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+    <style>
+      /* Hide the ad container by default */
+      #adContainer {
+        display: none;
+      }
+
+      /* Style the Play with Ad button */
+      #playWithAd {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      /* Optional: Style for disabled button */
+      #playWithAd:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Audio with Pre-roll and Post-roll Ads</h1>
+
+    <!-- Audio Player -->
+    <audio id="contentPlayer" controls>
+      <source
+        src="https://cloudimages.broadwayworld.com/audio/2024/07/2322543.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Play with Ad Button -->
+    <button id="playWithAd">Play with Ad</button>
+
+    <!-- Ad Display Container -->
+    <div id="adContainer"></div>
+
+    <!-- Link to the Updated JavaScript -->
+    <script src="/audio-ad_external-play.js"></script>
+  </body>
+</html>
